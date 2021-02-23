@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Storm</title>
+    <link href="./assests/fornts/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- font Abel 'Google font' -->
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./library/font/fontawesome-free-5.14.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./library/Css/base.css">
+    <link rel="stylesheet" href="./library/Css/grid__system.css"> 
+    <link rel="stylesheet" href="./library/Css/responsive.css">
+    <link rel="stylesheet" href="./library/Css/main__silde.css">
+    <style>
+        .slide__background{
+        max-width: 100%;
+        height: 100%;
+        }
+        .silde__backround-img{
+        width: 100%;
+        height: 100vh;
+        background-image: url(.//library/img/bg_main-slide3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: slIde 20s infinite;
+        background-position: center;
+        }
+        @keyframes slIde{
+        25%{
+            background-image: url(.//library/img/bg_main-slide2.jpg);
+        }
+        50%{
+            background-image: url(.//library/img/bg_main-slide4.jpg);
+        }
+        75%{
+            background-image: url(.//library/img/bg_main-slide.jpg);
+        }
+        100%{
+            background-image: url(.//library/img/bg_main-slide3.jpg);
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide__background">
+        <div class="silde__backround-img"></div>
+    </div>
+
+    <div class="nav__main">
+        <div class="grid wide">
+            <nav class="nav__layout">
+                <ul class="nav__layout-list">
+                    <li class="nav__layout-list-item">
+                        <a href="" class="nav__layout-list--link">
+                            <img src="./library/img/Logo/img_logo-removebg-preview.png" alt="Logo" class="nav__layout-link--logo">
+                            lus
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="nav__layout-list">
+                    <li class="nav__layout-list-item hide__on-the--mobile">
+                       <div class="nav__layout-login"  id="login">
+                            <a class="nav__layout-login--btn">Login</a>
+                       </div>
+                    </li>
+
+                    <li class="nav__layout-list-item">
+                        <a id="btn" class="nav__layout-list--link">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <div class="modal__category" id="myModal">
+                            <div class="grid wide">
+                                <nav class="nav__layout-category">
+                                    <ul class="nav__layout-list">
+                                        <li class="nav__layout-list-item">
+                                            <div href="" class="nav__layout-list--link2">
+                                                <img src="library/img/Logo/img_logo-removebg-preview -2.png" alt="Logo" class="nav__layout-link--logo">
+                                                <span class="hide__on-the--mobile">lus</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                        
+                                    <ul class="nav__layout-list">
+                                        <li class="nav__layout-list-item  hide__on-the--mobile">
+                                           <div class="nav__layout-login2" id="login3">
+                                                <a  class="nav__layout-login--btn2">Login</a>
+                                           </div>
+                                        </li>
+                                        <div class="close__modal">
+                                            <li class="nav__layout-list-item">
+                                                <a class="nav__layout-list--link2">
+                                                    <i class="fas fa-times"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </nav>
+
+                                <div class="row sm-gutter">
+                                    <div class="col l-3 m-6 c-6">
+                                        <ul class="menu__list">
+                                            <li class="menu__list-heading">Công ty</li>
+                                            <li class="menu__list-item">
+                                                <a href="#" class="menu__list-link">Tuyển dụng</a>
+                                                <a href="#" class="menu__list-link">Liên hệ</a>
+                                                <a href="#" class="menu__list-link">Bảo mật</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col l-3 m-6 c-6">
+                                        <ul class="menu__list">
+                                            <li class="menu__list-heading">Cộng đồng</li>
+                                            <li class="menu__list-item">
+                                                <a href="#" class="menu__list-link">Blog</a>
+                                                <a href="#" class="menu__list-link">Báo chí</a>
+                                                <a href="#" class="menu__list-link">Hỗ trợ</a>
+                                                <a href="#" class="menu__list-link">Mã khuyến mãi</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col l-3 m-6 c-6">
+                                        <ul class="menu__list">
+                                            <li class="menu__list-heading">Đối tác</li>
+                                            <li class="menu__list-item">
+                                                <a href="#" class="menu__list-link">FPT Polytechnic</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col l-3 m-6 c-6">
+                                        <ul class="menu__list">
+                                            <li class="menu__list-heading">Pháp lý</li>
+                                            <li class="menu__list-item">
+                                                <a href="#" class="menu__list-link">Quyền riêng tư</a>
+                                                <a href="#" class="menu__list-link">Điều khoản</a>
+                                                <a href="#" class="menu__list-link">Quy tắc cộng đồng</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-12">
+                                        <ul class="category__bottom">
+                                            <li class="category__bottom-heading">Trải nghiệm trên ứng dụng</li>
+                                            <li class="category__bottom-list">
+                                                <a href="" class="category__bottom-list-link">
+                                                    <img src="./library/img/app_store.png" alt="app store" class="img__link">
+                                                </a>
+                                                <a href="" class="category__bottom-list-link">
+                                                    <img src="./library/img/google_play.png" alt="ch play" class="img__link">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-12">
+                                        <ul class="category__bottom">
+                                            <li class="category__bottom-heading">Mạng xã hội</li>
+                                            <li class="category__bottom-list">
+                                                <a href="" class="cate__bottom-link--icon">
+                                                    <i class="fab fa-facebook-square"></i>
+                                                </a>
+                                                <a href="" class="cate__bottom-link--icon">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                                <a href="" class="cate__bottom-link--icon">
+                                                    <i class="fab fa-twitter-square"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="swip__img-layout">
+                <img src="./library/img/swip.png" alt="Swip img" class="swip__img">
+            </div>
+
+            <div class="btn__login-on--screen" id="login2">
+                <a class="btn__login-link">Lập Tài Khoản</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- modal singin -->
+    <div class="modal__login" id="myModal2">
+        <div class="modal__login-overlay"></div>
+        <div class="form__auth">
+            <div class="form__auth-layout">
+                <div class="form__auth-heading">
+                    <img src="./library/img/Logo/img_logo-removebg-preview -2.png" alt="Logo" class="heading__img">
+                    <div class="button__closed">
+                        <a class="btn__close_heading">
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                    <h3>Let's Go</h3>
+                    <p>Khi nhấp vào Đăng Nhập, bạn ý với
+                        <a href="" class="heading__text-link"> Điều Khoản</a> và <a href="" class="heading__text-link">Chính Sách</a> của chúng tôi.</p>
+                </div>  
+
+                <div class="form__auth-body">
+                    <a href="" class="form__auth-body--btn">
+                        <i class="fab fa-facebook-f"></i> 
+                        Đăng nhập với Facebook
+                    </a>
+                    <a href="" class="form__auth-body--btn">
+                        <i class="fab fa-google"></i>
+                         Đăng nhập với Google
+                    </a>
+                    <div id="login4" class="btn__close">
+                        <a class="form__auth-body--btn">
+                            <i class="fas fa-phone"></i> 
+                            Đăng nhập với số điện <br/>thoại
+                        </a>
+                    </div>
+                </div>
+                <div class="form__auth-footer">
+                    <h3>Kênh Cộng Đồng</h3>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCLBC4F&tabs&width=350&height=120&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=787075412133553" width="350" height="120" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    <a href="">Sự cố đăng nhập
+                        <i class="far fa-question-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- login with numberphone -->
+
+    <div class="modal__login2" id="myModal3">
+        <div class="modal__login-overlay"></div>
+        <div class="form__auth">
+            <div class="form__auth-layout">
+                <div class="form__auth-heading">
+                    <img src="./library/img/Logo/img_logo-removebg-preview -2.png" alt="Logo" class="heading__img">
+                    <div class="button__closed2">
+                        <a class="btn__close_heading">
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                    <h3>Nhập số điện thoại di động của bạn</h3>
+                </div>  
+
+                <div class="form__auth-body">
+                    <div class="form__auth-body--input">
+                        <form action="" method="GET">
+                            <input min="1" max="10" placeholder="Nhập số điện thoại" type="number">
+                        </form>
+                    </div>
+                </div>
+                <div class="form__auth-footer">
+                    <button type="submit">Tiếp</button>
+                    <a href="">Gửi lại mã</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById("btn")
+        btn.onclick = function(){
+            modal.style.display = "block";
+        }
+        var div = document.getElementsByClassName("close__modal")[0];
+        div.onclick = function(){
+            modal.style.display = "none";
+        }
+                // modal login
+
+        var modalb = document.getElementById('myModal2');
+        var modale = document.getElementById('myModal3');
+        var btnb = document.getElementById("login")
+        var btnc = document.getElementById("login2")
+        var btnd = document.getElementById("login3")
+        var btne = document.getElementById("login4")
+        btnb.onclick = function(){
+            modalb.style.display = "block";
+        }
+        btnc.onclick = function(){
+
+            modalb.style.display = "block";
+        }
+        btnd.onclick = function(){
+            modalb.style.display = "block";
+        }
+        btne.onclick = function(){
+            modale.style.display = "block";
+        }
+        var div2 = document.getElementsByClassName("button__closed")[0];
+        div2.onclick = function(){
+            modalb.style.display = "none";
+        }
+        var div3 = document.getElementsByClassName("button__closed2")[0];
+        div3.onclick = function(){
+            modale.style.display = "none";
+        }                        
+    </script>
+    <div id="fb-root"></div>
+    
+   
+</body>
+</html>

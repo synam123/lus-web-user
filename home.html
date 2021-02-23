@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Storm</title>
+    <link href="./assests/fornts/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- font Abel 'Google font' -->
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./library/font/fontawesome-free-5.14.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./library/Css/base.css">
+    <link rel="stylesheet" href="./library/Css/grid__system.css"> 
+    <link rel="stylesheet" href="./library/Css/responsive.css">
+    <link rel="stylesheet" href="./library/Css/main.css">
+    <link rel="apple-touch-icon" href="./library/Css/main.css">
+    <style>
+    .layout__silde_event{
+        max-width: 200px;
+        max-height:280px;
+        
+    }
+
+    .layout__slide_event-img{
+        width: 330px;
+        height:280px;
+        background-image: url(./library/img/slide_img2.jpg);
+        background-size: cover;
+        background-position: center;
+        animation: miniSlide 20s infinite;
+        border-radius: 14px;
+    }
+
+    @keyframes miniSlide{
+        25%{
+            background-image: url(.//library/img/slide_img3.jpg);
+        }
+        50%{
+            background-image: url(.//library/img/slide_img4.jpg);
+        }
+        75%{
+            background-image: url(.//library/img/slide_img2.jpg);
+        }
+        100%{
+            background-image: url(.//library/img/slide_img3.jpg);
+        }
+    }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="main">
+        <div class="grid">
+            <div class="row no-gutters">
+               <div class="col l-3 cate__app  hide__on_theTablet">
+                    <nav class="cate__app_layout">
+                        <ul class="cate__app_img">
+                            <img src="./library/img/avatar.jpg" alt="" class="cate__ap_img-layout">
+                            <label for="file_upload" class="icon__upfile">
+                                <i class="fas fa-camera"></i>
+                            </label>
+                            <input id="file_upload" type="file"/>
+                            <li class="cate__app_profile">
+                                <a href="" class="cate__app_profile-link">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                                <a href="" class="cate__app_profile-link">
+                                    <i class="fas fa-user-edit"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav__layout_menu">
+                            <li class="nav__layout_menu-list" >
+                                <a class="nav__layout_menu-link" id="btn__ad_profileIdol">
+                                    Tạo hồ sơ Idol
+                                </a>
+                            </li>
+                            <li class="nav__layout_menu-list">
+                                <a  class="nav__layout_menu-link" id="btnShow">
+                                    My Favourite
+                                </a>
+                            </li>
+                            <li class="nav__layout_menu-list">
+                                <a class="nav__layout_menu-link" id="btnEvent">
+                                    Event
+                                </a>
+                            </li>
+                            <li class="nav__layout_menu-list">
+                                <a href="" class="nav__layout_menu-link">
+                                    My Voucher
+                                </a>
+                            </li>
+                        </ul>
+                    
+                        <ul class="nav__layout_setting">
+                            <h3>LUS</h3>
+                            <li class="nav__layout_setting-list">
+                                <a href="" class="nav__layout_setting-link">
+                                    <span>Setting</span>
+                                    <i class="fas fa-cog"></i>
+                                </a>
+                            </li>
+                            <li class="nav__layout_setting-list">
+                                <a href="" class="nav__layout_setting-link">
+                                    <span>Gợi ý</span>
+                                    <i class="fas fa-lightbulb"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+               </div>
+               <div class="col l-9 m-12 c-12">
+                <div class="row no-gutters layout__position">
+                    <div class="filter__layout  layout__filter_padding">
+                        <label for="filter__tablet_btn" class="filter__layout_heading">
+                            <i class="fas fa-bars"></i>           
+                        </label>
+                        <input type="checkbox" hidden id="filter__tablet_btn" class="filter__input">
+                        <label for="filter__tablet_btn" class="filter__tablet_overlay"></label>
+                            <nav class="nav__tablet">
+                                <div class="nav__tablet_heading">
+                                    <label for="filter__tablet_btn" class="btn__nav_close">
+                                        <i class="fas fa-times"></i>
+                                    </label>
+                                </div>
+                                <ul class="nav__tablet_menu">
+                                    <li class="nav__tablet_menu-item" >
+                                        <a class="nav__tablet_menu-item--link" id="topMatchtablet">
+                                            Cá nhân
+                                        </a>
+                                    </li>
+                                    <li class="nav__tablet_menu-item" >
+                                        <a class="nav__tablet_menu-item--link" id="topMatchtablet">
+                                            Top match
+                                        </a>
+                                    </li>
+                                    <li class="nav__tablet_menu-item">
+                                        <a href="" class="nav__tablet_menu-item--link">
+                                            My favourite
+                                        </a>
+                                    </li>
+                                    <li class="nav__tablet_menu-item">
+                                        <a href="" class="nav__tablet_menu-item--link">
+                                            Sự kiện chung
+                                        </a>
+                                    </li>
+                                    <li class="nav__tablet_menu-item">
+                                        <a href="" class="nav__tablet_menu-item--link">
+                                            Nhóm chung
+                                        </a>
+                                    </li>
+                                    <li class="nav__tablet_menu-item" id="listVouchertablet">
+                                        <a  class="nav__tablet_menu-item--link">
+                                            Voucher mỗi tháng
+                                        </a>
+                                    </li>
+                                    <li class="nav__tablet_menu-item">
+                                        <a href="" class="nav__tablet_menu-item--link">
+                                            Đăng xuất
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        <div class="filter__layout_container hide__on-the--mobile">
+                            <button class="filter__layout_btn-select--1">
+                                 Top match
+                             </button>
+                            <button class="filter__layout_btn-select h">
+                                Real love
+                            </button>
+                            <div class="filter__layout_select">
+                                <div class="filter__layout_select-label hide__on-the--mobile">
+                                     <span class="filter__layout_select-header">
+                                         Độ tuổi
+                                     </span>
+                                     <ul class="filter__layout_select-list hide__on-the--mobile">
+                                         <li class="filter__layout_select-list--item">
+                                             <a href="" class="filter__layout_select-list--link">
+                                                 18 - 25
+                                             </a>
+                                         </li>
+                                         <li class="filter__layout_select-list--item">
+                                             <a href="" class="filter__layout_select-list--link">
+                                                 25 - 30
+                                             </a>
+                                         </li>
+                                         <li class="filter__layout_select-list--item">
+                                             <a href="" class="filter__layout_select-list--link">
+                                                 <i class="fas fa-plane"></i>
+                                             </a>
+                                         </li>
+                                     </ul>
+                                </div>
+                                <i class="select-input_icon fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="filter__layout_search">
+                                <div class="filter__layout_search-wrap">
+                                    <input type="text" class="filter__layout_search-input">
+                                    <button class="filter__layout_search-input--btn">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                   <div class="row no-gutters">
+                       <div class="col l-4 m-5 hide__on-the--mobile">
+                        <div class="row no-gutters card__event-position">
+                            <div class="layout__event">
+                                <div class="layout__general_event-layout">
+                                    <div class="layout__general_event-icon--layout">
+                                        <span class="layout__general_event-icon">
+                                            <i class="fas fa-table"></i>
+                                        </span>
+                                    </div>
+                                    <div class="layout__general_event-content">
+                                        <h4 class="layput__general_event-content--heading">
+                                            Sự kiện chung
+                                        </h4>
+                                        <p class="layout__general_event-content--body">
+                                            Tham gia sự kiện trên Lus, như đi xem phim, gặp gỡ, tán gẫu
+                                        </p>
+                                    </div>
+                                    <div class="layout__general_event-button">
+                                        <a href="" class="layout__general_event-button--link">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters card__event-position2">
+                            <div class="layout__event">
+                                <div class="layout__general_event-layout">
+                                    <div class="layout__general_event-icon--layout">
+                                        <span class="layout__general_event-icon">
+                                            <i class="fas fa-layer-group"></i>
+                                        </span>
+                                    </div>
+                                    <div class="layout__general_event-content">
+                                        <h4 class="layput__general_event-content--heading">
+                                            Nhóm chung
+                                        </h4>
+                                        <p class="layout__general_event-content--body">
+                                            Tham gia các nhóm để được giao lưu, hẹn hò và nhiều hơn thế nữa
+                                        </p>
+                                    </div>
+                                    <div class="layout__general_event-button">
+                                        <a href="" class="layout__general_event-button--link">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters card__event-position3">
+                            <div class="layout__event">
+                                <div class="layout__general_event-layout">
+                                    <div class="layout__general_event-icon--layout">
+                                        <span class="layout__general_event-icon">
+                                            <i class="fas fa-poll-h"></i>
+                                        </span>
+                                    </div>
+                                    <div class="layout__general_event-content">
+                                        <h4 class="layput__general_event-content--heading">
+                                            Voucher mỗi tháng
+                                        </h4>
+                                        <p class="layout__general_event-content--body">
+                                            Hãy nhanh tay nhận các voucher để tận hưởng các ưu dịch vụ
+                                        </p>
+                                    </div>
+                                    <div class="layout__general_event-button">
+                                        <a href="" class="layout__general_event-button--link">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- silde -->
+                        <div class="row no-gutters card__event-position4">
+                            <div class="layout__silde_event">
+                                <div class="layout__slide_event-img">
+                                </div>
+                            </div>
+                        </div>
+
+
+                       </div>
+                       <div class="col l-8  m-7 c-12">
+
+                         <!-- story Idol -->
+                         <nav class="mobile__story">
+                            <ul class="mobile__story_list">
+                                <li class="mobile__story_item">
+                                    <a class="mobile__story_link">
+                                        <img src="./library/img/post_img.jpg" alt="" class="mobile__story_img">
+                                    </a>
+                                </li>
+                                <li class="mobile__story_item">
+                                    <a class="mobile__story_link">
+                                        <img src="./library/img/post_img.jpg" alt="" class="mobile__story_img">
+                                    </a>
+                                </li>
+                                <li class="mobile__story_item">
+                                    <a class="mobile__story_link">
+                                        <img src="./library/img/post_img.jpg" alt="" class="mobile__story_img">
+                                    </a>
+                                </li>
+                                <li class="mobile__story_item">
+                                    <a class="mobile__story_link">
+                                        <img src="./library/img/post_img.jpg" alt="" class="mobile__story_img">
+                                    </a>
+                                </li>
+                                <li class="mobile__story_item">
+                                    <a class="mobile__story_link">
+                                        <img src="./library/img/post_img.jpg" alt="" class="mobile__story_img">
+                                    </a>
+                                </li>
+                                <li class="mobile__story_item">
+                                    <a class="mobile__story_link">
+                                        <img src="./library/img/post_img.jpg" alt="" class="mobile__story_img">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                           
+                           <div class="row no-gutters">
+                                <div class="container__post">
+                                    <div class="container__post_layout">
+                                        <div class="container__post_header">
+                                            <div class="container__post_header-avatar">
+                                                <img src="./library/img/post_img.jpg" alt="avatar" class="container__post_header-avatar--layout">
+                                            </div>
+                                            <div class="container__post_header-info">
+                                                <a href="">
+                                                    <h3 class="container__post_header-name">
+                                                        Tasherio
+                                                    </h3>
+                                                </a>
+                                                <div class="container__post_header-time">
+                                                    <p class="container__post_header-realtime">
+                                                        17.00
+                                                    </p>
+                                                    <span class="container__post_header-icon">
+                                                        <i class="fas fa-globe"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container__post_title">
+                                            <p class="container__post_title_cap">
+                                                Ai thuê tui đi <3
+                                            </p>
+                                        </div>
+                                        <div class="container__post_img">
+                                            <img src="./library/img/post_img.jpg" alt="" class="container__post_img-layout">
+                                            
+                                        </div>
+                                        <div class="container__post_event">
+                                            <div class="container__post_event-layout">
+                                                <buttton class="container__post_event-btn" id='myButton' onclick='changeClass()'>
+                                                    <i class="fas fa-heart"></i>
+                                                </buttton>
+                                                <div class="container__post_status">
+                                                    <span class="container__post_status_ready">
+                                                        <p>Ready to match</p>
+                                                        <i class="fas fa-sun"></i>
+                                                    </span>
+                                                    
+                                                    <!-- <span class="container__post_status_nonready">
+                                                        <p>Non-ready to match</p>
+                                                        <i class="fas fa-sun"></i>
+                                                    </span> -->
+                                                </div>
+                                            </div>
+                                            <div class="container__post_event-info">
+                                                <div class="container__post_event-location">
+                                                    <p class="container__post_event_loca-info">
+                                                        Đà Nẵng
+                                                        <span>
+                                                            <i class="fas fa-map-marker-alt"></i>
+                                                        </span>
+                                                    </p>
+
+                                                </div>
+                                                <div class="container__post_event-status">
+                                                    <p class="container__post_event-status--name">
+                                                        Tasherio Oliva
+                                                    </p>
+                                                    <p class="container__post_event-status--age">
+                                                        21
+                                                    </p>
+                                                    <div class="container__post_event-status--infoBody">
+                                                        <span class="infoBody__height">
+                                                            1m67
+                                                        </span>
+                                                        <span class="infoBody__weight">
+                                                            58kg
+                                                        </span>
+                                                    </div>
+                                                    <p class="container__post_event-status--genitive">
+                                                        Dịu dàng và ấm áp
+                                                    </p>
+                                                </div>
+
+                                                <!-- button event -->
+                                                <button class="container__post_event-status--eventBtn">
+                                                    Liên hệ ngay
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+
+                           <div class="row no-gutters">
+                            <div class="container__post">
+                                <div class="container__post_layout">
+                                    <div class="container__post_header">
+                                        <div class="container__post_header-avatar">
+                                            <img src="./library/img/post_img2.jpg" alt="avatar" class="container__post_header-avatar--layout">
+                                        </div>
+                                        <div class="container__post_header-info">
+                                            <a href="">
+                                                <h3 class="container__post_header-name">
+                                                    Bảo Trân
+                                                </h3>
+                                            </a>
+                                            <div class="container__post_header-time">
+                                                <p class="container__post_header-realtime">
+                                                    8.32
+                                                </p>
+                                                <span class="container__post_header-icon">
+                                                    <i class="fas fa-globe"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container__post_title">
+                                        <p class="container__post_title_cap">
+                                            Mùa đông đến rồi đó anh gì ơiiii<3
+                                        </p>
+                                    </div>
+                                    <div class="container__post_img">
+                                        <img src="./library/img/post_img2.jpg" alt="" class="container__post_img-layout">
+                                        
+                                    </div>
+                                    <div class="container__post_event">
+                                        <div class="container__post_event-layout">
+                                            <buttton class="container__post_event-btn" id='myButton2' onclick='changeClass()'>
+                                                <i class="fas fa-heart"></i>
+                                            </buttton>
+                                            <div class="container__post_status">
+                                                <span class="container__post_status_ready">
+                                                    <p>Ready to match</p>
+                                                    <i class="fas fa-sun"></i>
+                                                </span>
+                                                
+                                                <!-- <span class="container__post_status_nonready">
+                                                    <p>Non-ready to match</p>
+                                                    <i class="fas fa-sun"></i>
+                                                </span> -->
+                                            </div>
+                                        </div>
+                                        <div class="container__post_event-info">
+                                            <div class="container__post_event-location">
+                                                <p class="container__post_event_loca-info">
+                                                    Đà Nẵng
+                                                    <span>
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                    </span>
+                                                </p>
+
+                                            </div>
+                                            <div class="container__post_event-status">
+                                                <p class="container__post_event-status--name">
+                                                    Trần Lê bảo Trân
+                                                </p>
+                                                <p class="container__post_event-status--age">
+                                                    19
+                                                </p>
+                                                <div class="container__post_event-status--infoBody">
+                                                    <span class="infoBody__height">
+                                                        1m64
+                                                    </span>
+                                                    <span class="infoBody__weight">
+                                                        52kg
+                                                    </span>
+                                                </div>
+                                                <p class="container__post_event-status--genitive">
+                                                    Nghe lời và vui vẻ
+                                                </p>
+                                            </div>
+
+                                            <!-- button event -->
+                                            <button class="container__post_event-status--eventBtn">
+                                                Liên hệ ngay
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="row no-gutters">
+                                <div class="container__post">
+                                    <div class="container__post_layout">
+                                        <div class="container__post_header">
+                                            <div class="container__post_header-avatar">
+                                                <img src="./library/img/post_img3.jpg" alt="avatar" class="container__post_header-avatar--layout">
+                                            </div>
+                                            <div class="container__post_header-info">
+                                                <a href="">
+                                                    <h3 class="container__post_header-name">
+                                                        Lan Anh
+                                                    </h3>
+                                                </a>
+                                                <div class="container__post_header-time">
+                                                    <p class="container__post_header-realtime">
+                                                        19.28
+                                                    </p>
+                                                    <span class="container__post_header-icon">
+                                                        <i class="fas fa-globe"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container__post_title">
+                                            <p class="container__post_title_cap">
+                                                Anh ơi, anh đánh rơi người yêu nè
+                                            </p>
+                                        </div>
+                                        <div class="container__post_img">
+                                            <img src="./library/img/post_img3.jpg" alt="" class="container__post_img-layout">
+                                            
+                                        </div>
+                                        <div class="container__post_event">
+                                            <div class="container__post_event-layout">
+                                                <buttton class="container__post_event-btn" id='myButton2' onclick='changeClass()'>
+                                                    <i class="fas fa-heart"></i>
+                                                </buttton>
+                                                <div class="container__post_status">
+                                                    <span class="container__post_status_ready">
+                                                        <p>Ready to match</p>
+                                                        <i class="fas fa-sun"></i>
+                                                    </span>
+                                                    
+                                                    <!-- <span class="container__post_status_nonready">
+                                                        <p>Non-ready to match</p>
+                                                        <i class="fas fa-sun"></i>
+                                                    </span> -->
+                                                </div>
+                                            </div>
+                                            <div class="container__post_event-info">
+                                                <div class="container__post_event-location">
+                                                    <p class="container__post_event_loca-info">
+                                                        Đà Nẵng
+                                                        <span>
+                                                            <i class="fas fa-map-marker-alt"></i>
+                                                        </span>
+                                                    </p>
+    
+                                                </div>
+                                                <div class="container__post_event-status">
+                                                    <p class="container__post_event-status--name">
+                                                        Nguyễn Thị Lan Anh
+                                                    </p>
+                                                    <p class="container__post_event-status--age">
+                                                        22
+                                                    </p>
+                                                    <div class="container__post_event-status--infoBody">
+                                                        <span class="infoBody__height">
+                                                            1m58
+                                                        </span>
+                                                        <span class="infoBody__weight">
+                                                            50kg
+                                                        </span>
+                                                    </div>
+                                                    <p class="container__post_event-status--genitive">
+                                                        Làm nũng và nấu ăn ngon
+                                                    </p>
+                                                </div>
+    
+                                                <!-- button event -->
+                                                <button class="container__post_event-status--eventBtn">
+                                                    Liên hệ ngay
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal__addIdol" id="modalIdol">
+        <div class="modal__login-overlay"></div>
+        <div class="form__auth">
+            <div class="form__auth-layout">
+                <div class="form__auth-header">
+                    <h3>Hồ sơ Idol</h3>
+                    <div class="btnclosed">
+                        <a class="btn__close_heading">
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="form__auth-body">
+                    <div class="form__auth-body--getinfo">
+                        <label for="" class="form__auth_input">
+                            <p class="form__auth_input-name">Số chứng minh thư</p>
+                            <form action="" class="form__auth_input-container">
+                                <input type="number"  class="form__auth_input-layout">
+                            </form>
+                        </label>
+    
+                        <label for="" class="form__auth_input">
+                            <p class="form__auth_input-name">Địa chỉ</p>
+                            <form action="" class="form__auth_input-container">
+                                <input type="text"  class="form__auth_input-layout">
+                            </form>
+                        </label>
+                    </div>
+
+                    <h3>Các dịch vụ</h3>
+                    <label class="form__auth_label">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                        Đi chơi, hẹn hò
+                    </label>
+                    <label class="form__auth_label">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Ra mắt gia đình, bạn bè
+                    </label>
+                    <label class="form__auth_label">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Cần tìm người tâm sự, trò chuyện
+                    </label>
+                    <label class="form__auth_label">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Tham gia sự kiện trang trọng, lễ hội đường phố
+                    </label>
+                    <p>Khi nhấp vào Tạo hồ sơ, bạn đã đồng ý với
+                        <a href="" class="heading__text-link"> Điều Khoản</a> và <a href="" class="heading__text-link">Chính Sách</a> của chúng tôi.</p>
+                        <a href="" class="form__auth_label-link">
+                            Tạo hồ sơ
+                        </a>    
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="modal__listIdol" id="modalList">
+        <div class="modal__login-overlay"></div>
+        <div class="form__auth">
+            <div class="form__auth-layout">
+                <div class="form__auth-header">
+                    <h3>Your Favourite</h3>
+                    <div class="btnclosed2">
+                        <a class="btn__close_heading">
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="form__auth-body">
+                    <div class="form__auth-body--getinfo">
+                        <label for="" class="form__auth_input">
+                            <p class="form__auth_input-name">Số chứng minh thư</p>
+                            <form action="" class="form__auth_input-container">
+                                <input type="number"  class="form__auth_input-layout">
+                            </form>
+                        </label>
+    
+                        <label for="" class="form__auth_input">
+                            <p class="form__auth_input-name">Địa chỉ</p>
+                            <form action="" class="form__auth_input-container">
+                                <input type="text"  class="form__auth_input-layout">
+                            </form>
+                        </label>
+                    </div>
+
+                    <h3>Các dịch vụ</h3>
+                    <label class="form__auth_label">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                        Đi chơi, hẹn hò
+                    </label>
+                    <label class="form__auth_label">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Ra mắt gia đình, bạn bè
+                    </label>
+                    <label class="form__auth_label">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Cần tìm người tâm sự, trò chuyện
+                    </label>
+                    <label class="form__auth_label">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Tham gia sự kiện trang trọng, lễ hội đường phố
+                    </label>
+                    <p>Khi nhấp vào Tạo hồ sơ, bạn đã đồng ý với
+                        <a href="" class="heading__text-link"> Điều Khoản</a> và <a href="" class="heading__text-link">Chính Sách</a> của chúng tôi.</p>
+                        <a href="" class="form__auth_label-link">
+                            Tạo hồ sơ
+                        </a>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal__listEvent" id="modalEvent">
+        <div class="modal__login-overlay"></div>
+        <div class="form__auth2">
+            <div class="form__auth-layout">
+                <div class="form__auth-header">
+                    <div class="form__auth_header-layout">
+                        <h3>Event</h3>
+                        <div class="btnclosed3">
+                            <a class="btn__close_heading">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__auth-body">
+                    <div class="form__auth_event">
+                        <div class="form__auth_event-layout">
+                            <h3>Giảm 20 %  cho lần nạp đầu tiên</h3>
+                            <a href="" class="event__layout_img">
+                                <img src="./library/img/event_img1.png" alt="Img sale off" class="event__layout_img-layout">
+                                <div class="show__off">
+                                </div>
+                            </a>
+                            <h3>Giảm 20 %  cho lần nạp đầu tiên</h3>
+                            <a href="" class="event__layout_img">
+                                <img src="./library/img/event_img1.png" alt="Img sale off" class="event__layout_img-layout">
+                                <div class="show__off">
+                                </div>
+                            </a>
+                            <h3>Giảm 20 %  cho lần nạp đầu tiên</h3>
+                            <a href="" class="event__layout_img">
+                                <img src="./library/img/event_img1.png" alt="Img sale off" class="event__layout_img-layout">
+                                <div class="show__off">
+                                </div>
+                            </a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btnAdd = document.getElementById('btn__ad_profileIdol');
+        var modalIdol =  document.getElementById('modalIdol');
+        var topMatchtablet = document.getElementById('topMatchtablet');
+        var listVouchertablet = document.getElementById('listVouchertablet');
+        var btnShow = document.getElementById('btnShow');
+        var modalShow = document.getElementById('modalList');
+        var modalEvent = document.getElementById('modalEvent');
+        var btnEvent = document.getElementById('btnEvent');
+        listVouchertablet.onclick = function(){
+            modalEvent.style.display = "block";
+        }
+        topMatchtablet.onclick = function(){
+            modalIdol.style.display = "block";
+        }
+        btnAdd.onclick = function(){
+            modalIdol.style.display = "block";
+        }
+
+        btnShow.onclick = function(){
+            modalShow.style.display = "block"
+        }
+
+        btnEvent.onclick = function(){
+            modalEvent.style.display = "block";
+        }
+        var closeidol = document.getElementsByClassName('btnclosed')[0];
+        closeidol.onclick = function(){
+            modalIdol.style.display = "none";
+        }
+        var closeShow = document.getElementsByClassName('btnclosed2')[0];
+        closeShow.onclick = function(){
+            modalShow.style.display = "none"
+        }
+
+        var closeEvent = document.getElementsByClassName('btnclosed3')[0];
+        closeEvent.onclick = function(){
+            modalEvent.style.display = "none"
+        }
+
+        function changeClass(){
+          document.getElementById('myButton').className = 'formatForButton';
+        }
+      </script>
+</body>
+</html>

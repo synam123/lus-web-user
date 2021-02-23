@@ -1,0 +1,374 @@
+:root{
+    --text-color1:rgb(58, 56, 56);
+    --text-color2: #fd6e75;
+    --text-color3: #fff;
+    --boder-color: #eae0e0;
+    --heart-btn: 2rem;
+
+    --header-height: 100px;
+    --header-card: 80px;
+    --header-cardTop: 52px;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 120%;
+    line-height: 1.6rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffe9f2;
+}
+
+/* body::-webkit-scrollbar{
+    background: transparent;
+} */
+/* animation */
+@keyframes fadin{
+    0%{
+        opacity: 0;
+
+    }
+    25%{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes droping{
+    0%{
+        opacity: 0;
+    }
+    35%{
+        opacity: 0.4;
+    }
+    70%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes rotate{
+    0%{
+        opacity: 0;
+    }
+    65%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* hiden */
+.hiden__class{
+    display: none;
+}
+input[type="file"] {
+    display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* modal login */
+
+.modal__login,
+.modal__login2,
+.modal__addIdol,
+.modal__listIdol,
+.modal__listEvent{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    animation: fadin ease-in 0.4s;
+    z-index: 111111;
+    display: none;
+}
+
+.modal__listEvent{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.modal__listEvent::-webkit-scrollbar{
+    background: transparent;
+}
+
+
+.modal__listEvent {
+    /* height: auto; */
+}
+
+
+.modal__login-overlay,
+.modal__login-overlay2{
+    position: fixed;
+    background-color: rgb(58, 56, 56, 0.3);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* display: none;    */
+}
+
+.form__auth,
+.form__auth2{
+    max-width: 440px;
+    height: 100vh;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 90;
+    position: relative;
+    margin: 0 auto;
+}
+
+.form__auth2{
+    height: auto;
+   
+}
+
+.form__auth-layout{
+    padding: 12px 12px;
+}
+
+.heading__img{
+    max-width: 40px;
+    max-height: 40px;
+    display: flex;
+    margin: 0 auto;
+}
+.btn__close_heading{
+    position: absolute;
+    top: 10px;
+    right: 4%;
+
+}
+.form__auth-heading > h3{
+    text-align: center;
+    font-style: italic;
+    font-size: 1.6rem;
+    color: var(--text-color1);
+}
+
+.form__auth-heading > p{
+    margin: 0;
+    font-size: 0.9rem;
+    padding: 0 30px;
+    text-align: center;
+    color: var(--text-color1);
+}
+
+.heading__text-link{
+    color: var(--text-color1);
+    font-size: 0.8rem;
+}
+.heading__text-link:hover{
+    text-decoration: none;
+    color: var(--text-color2);
+}
+
+.form__auth-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__auth-body--btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 70%;
+    height: 55px;
+    text-align: center;
+    color: var(--text-color1);
+    margin: 10px auto;
+    border-radius: 20px;
+    border: 1px solid var(--text-color1);
+    padding-left: 30px;
+}
+
+.form__auth-body--btn:hover{
+    color: black;
+    border: 1px solid var(--text-color2);
+    cursor: pointer;
+}
+
+.form__auth-body--btn > i{
+    position: absolute;
+    left: 90px;
+    font-size: 1.2rem;
+}
+
+.form__auth-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__auth-footer > h3{
+    text-align: center;
+    margin: 20px 0 10px 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.form__auth-footer > iframe {
+    margin: 10px auto;
+}
+
+.form__auth-footer > a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--text-color1);
+    text-align: center;
+    margin-top: 8px;
+}
+
+.form__auth-footer > a:hover{
+    text-decoration: underline;
+}
+
+/* modal login with numberphone */
+
+
+.form__auth-body--input > form{
+    display: flex;
+    margin: 18px 0 16px 0;
+}
+
+.form__auth-body--input > form > input {
+    flex: 0.6;
+    height: 36px;
+    margin: 0 auto;
+    padding: 2px 14px;
+    border-radius: 4px;
+    border: 1px solid;
+    outline: none;
+}
+
+
+.form__auth-footer > button {
+    height: 40px;
+    width: 100px;
+    margin: 10px auto;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: var(--text-color2);
+    color: #fff;
+    cursor: pointer;
+}
+
+.form__auth-footer > button:hover{
+    box-shadow: 0 0 5px var(--text-color2),
+                0 0 25px var(--text-color2),
+                0 0 50px var(--text-color2),
+                0 0 200px var(--text-color2);
+}
+
+.formatForButton {
+    text-shadow: 0  0 1.4rem#ff7854,
+                0  0 1.4rem#fd267d;
+    height: 60px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+.formatForButton > i{
+    margin: 0 auto;
+    font-size: var(--heart-btn);
+    color:#ee1823;
+}   
+
+/* css checkbox */
+.form__auth_label {
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+
+.form__auth_label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+ 
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee; 
+}
+  
+  
+.form__auth_label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+  
+.form__auth_label input:checked ~ .checkmark {
+    background-color: var(--text-color2);
+}
+  
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  .form__auth_label input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+.form__auth_label .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
